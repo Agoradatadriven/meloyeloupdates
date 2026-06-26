@@ -40,7 +40,6 @@ body{
   margin:0; background:var(--bg); color:var(--ink);
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   font-size:16px; line-height:1.55; -webkit-font-smoothing:antialiased;
-  padding-bottom:58px; /* room for sticky CTA bar */
 }
 h1,h2,h3,h4{margin:0; color:var(--ink-strong); line-height:1.18; letter-spacing:-.01em; font-weight:750;}
 p{margin:0;}
@@ -683,7 +682,7 @@ table.tbl .num{font-variant-numeric:tabular-nums; font-weight:700; color:var(--i
             <tr><td><b>Priority 1: Call Centre Leads</b></td><td><span class="badge working"><span class="dot"></span>Working</span></td><td>Tested successfully with duplicate protection.</td></tr>
             <tr><td><b>Priority 2: Zoomin Leads</b></td><td><span class="badge updated"><span class="dot"></span>Updated</span></td><td>Timestamp fix added, needs final live form test.</td></tr>
             <tr><td><b>Priority 4: Warranty Registrations</b></td><td><span class="badge updated"><span class="dot"></span>Updated</span></td><td>Timestamp fix added, needs final live form test.</td></tr>
-            <tr><td><b>Zapier for Call Centre</b></td><td><span class="badge nextstep"><span class="dot"></span>Next Step</span></td><td>Trigger from <code class="k">All data</code> where <code class="k">Source = Call Centre</code>.</td></tr>
+            <tr><td><b>Zapier for Call Centre</b></td><td><span class="badge completed"><span class="dot"></span>Completed</span></td><td>Triggers from <code class="k">All data</code> where <code class="k">Source = Call Centre</code>.</td></tr>
             <tr><td><b>Live CRM Deployment</b></td><td><span class="badge nextstep"><span class="dot"></span>Next Step</span></td><td>Move from the duplicate CRM after approval.</td></tr>
           </tbody>
         </table>
@@ -977,7 +976,7 @@ table.tbl .num{font-variant-numeric:tabular-nums; font-weight:700; color:var(--i
 
     <!-- 8. Zapier setup -->
     <div class="card reveal" style="margin-bottom:22px;">
-      <div class="card-head"><h3>8. Zapier setup for Call Centre leads</h3><span class="badge nextstep"><span class="dot"></span>Next Step</span></div>
+      <div class="card-head"><h3>8. Zapier setup for Call Centre leads</h3><span class="badge completed"><span class="dot"></span>Completed</span></div>
       <div class="flow" style="margin-bottom:18px;">
         <div class="flow-node g"><span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg></span><span class="fn-t">All data new row</span></div>
         <div class="flow-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
@@ -1531,7 +1530,7 @@ table.tbl .num{font-variant-numeric:tabular-nums; font-weight:700; color:var(--i
           <li>Run one final Zoomin live form test.</li>
           <li>Run one final warranty live form test.</li>
           <li>Confirm both records appear in <code>All data</code>.</li>
-          <li>Set up or confirm a Zapier trigger for new <code>All data</code> rows where <code>Source = Call Centre</code>.</li>
+          <li>Confirm the Zapier trigger fires for new <code>All data</code> rows where <code>Source = Call Centre</code>.</li>
           <li>Once approved, apply the working duplicate CRM setup to the live CRM.</li>
         </ol>
       </div>
@@ -1590,14 +1589,6 @@ table.tbl .num{font-variant-numeric:tabular-nums; font-weight:700; color:var(--i
   </div>
   <div class="wrap"><div class="fbot">Prepared for MeloYelo &middot; Client performance update &middot; 26 June 2026</div></div>
 </footer>
-
-<!-- ============================================================ STICKY CTA ============================================================ -->
-<div class="cta-bar" role="complementary" aria-label="Next steps">
-  <div class="cta-in">
-    <div class="cta-t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg><span><b>Next:</b> Confirm live-form tests, connect Zapier, and prepare live CRM deployment.</span></div>
-    <a class="cta-btn" href="#next">View next steps</a>
-  </div>
-</div>
 
 <!-- ============================================================ SCRIPT: reveal on scroll + scrollspy ============================================================ -->
 <script>
